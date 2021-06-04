@@ -14,6 +14,7 @@
 		A5DDF252266AC4C200436888 /* o7UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF251266AC4C200436888 /* o7UnitTests.swift */; };
 		A5DDF25D266AC63400436888 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF25C266AC63300436888 /* NewsItem.swift */; };
 		A5DDF25F266AC6E000436888 /* HTMLNewsSanitiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF25E266AC6E000436888 /* HTMLNewsSanitiser.swift */; };
+		A5DDF261266AC75800436888 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF260266AC75800436888 /* NewsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A5DDF253266AC4C200436888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5DDF25C266AC63300436888 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		A5DDF25E266AC6E000436888 /* HTMLNewsSanitiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNewsSanitiser.swift; sourceTree = "<group>"; };
+		A5DDF260266AC75800436888 /* NewsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DDF25E266AC6E000436888 /* HTMLNewsSanitiser.swift */,
+				A5DDF260266AC75800436888 /* NewsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DDF261266AC75800436888 /* NewsService.swift in Sources */,
 				A5DDF23C266AC40400436888 /* ContentView.swift in Sources */,
 				A5DDF25D266AC63400436888 /* NewsItem.swift in Sources */,
 				A5DDF25F266AC6E000436888 /* HTMLNewsSanitiser.swift in Sources */,
