@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5DDF23A266AC40400436888 /* o7App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF239266AC40400436888 /* o7App.swift */; };
-		A5DDF23C266AC40400436888 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF23B266AC40400436888 /* ContentView.swift */; };
+		A5DDF23C266AC40400436888 /* NewsBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF23B266AC40400436888 /* NewsBoard.swift */; };
 		A5DDF23E266AC41500436888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF23D266AC41500436888 /* Assets.xcassets */; };
 		A5DDF241266AC41500436888 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF240266AC41500436888 /* Preview Assets.xcassets */; };
 		A5DDF252266AC4C200436888 /* o7UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF251266AC4C200436888 /* o7UnitTests.swift */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		A5DDF236266AC40400436888 /* o7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = o7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DDF239266AC40400436888 /* o7App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = o7App.swift; sourceTree = "<group>"; };
-		A5DDF23B266AC40400436888 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5DDF23B266AC40400436888 /* NewsBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBoard.swift; sourceTree = "<group>"; };
 		A5DDF23D266AC41500436888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DDF240266AC41500436888 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5DDF242266AC41500436888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 				A5DDF24A266AC49D00436888 /* ViewModel */,
 				A5DDF259266AC4C800436888 /* Services */,
 				A5DDF239266AC40400436888 /* o7App.swift */,
-				A5DDF23B266AC40400436888 /* ContentView.swift */,
 				A5DDF23D266AC41500436888 /* Assets.xcassets */,
 				A5DDF242266AC41500436888 /* Info.plist */,
 				A5DDF23F266AC41500436888 /* Preview Content */,
@@ -116,6 +115,7 @@
 		A5DDF249266AC49700436888 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A5DDF23B266AC40400436888 /* NewsBoard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DDF261266AC75800436888 /* NewsService.swift in Sources */,
-				A5DDF23C266AC40400436888 /* ContentView.swift in Sources */,
+				A5DDF23C266AC40400436888 /* NewsBoard.swift in Sources */,
 				A5DDF25D266AC63400436888 /* NewsItem.swift in Sources */,
 				A5DDF25F266AC6E000436888 /* HTMLNewsSanitiser.swift in Sources */,
 				A5DDF23A266AC40400436888 /* o7App.swift in Sources */,
