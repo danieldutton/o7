@@ -11,7 +11,18 @@
 		A5DDF23C266AC40400436888 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF23B266AC40400436888 /* ContentView.swift */; };
 		A5DDF23E266AC41500436888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF23D266AC41500436888 /* Assets.xcassets */; };
 		A5DDF241266AC41500436888 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF240266AC41500436888 /* Preview Assets.xcassets */; };
+		A5DDF252266AC4C200436888 /* o7UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF251266AC4C200436888 /* o7UnitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5DDF254266AC4C200436888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DDF22E266AC40400436888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DDF235266AC40400436888;
+			remoteInfo = o7;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A5DDF236266AC40400436888 /* o7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = o7.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +31,20 @@
 		A5DDF23D266AC41500436888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5DDF240266AC41500436888 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5DDF242266AC41500436888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DDF24F266AC4C200436888 /* o7UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = o7UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DDF251266AC4C200436888 /* o7UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = o7UnitTests.swift; sourceTree = "<group>"; };
+		A5DDF253266AC4C200436888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A5DDF233266AC40400436888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DDF24C266AC4C200436888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DDF238266AC40400436888 /* o7 */,
+				A5DDF250266AC4C200436888 /* o7UnitTests */,
 				A5DDF237266AC40400436888 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				A5DDF236266AC40400436888 /* o7.app */,
+				A5DDF24F266AC4C200436888 /* o7UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +75,10 @@
 		A5DDF238266AC40400436888 /* o7 */ = {
 			isa = PBXGroup;
 			children = (
+				A5DDF248266AC49100436888 /* Model */,
+				A5DDF249266AC49700436888 /* View */,
+				A5DDF24A266AC49D00436888 /* ViewModel */,
+				A5DDF259266AC4C800436888 /* Services */,
 				A5DDF239266AC40400436888 /* o7App.swift */,
 				A5DDF23B266AC40400436888 /* ContentView.swift */,
 				A5DDF23D266AC41500436888 /* Assets.xcassets */,
@@ -67,6 +94,59 @@
 				A5DDF240266AC41500436888 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5DDF248266AC49100436888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5DDF249266AC49700436888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5DDF24A266AC49D00436888 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A5DDF250266AC4C200436888 /* o7UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDF25A266AC4D300436888 /* ViewModel */,
+				A5DDF25B266AC4D900436888 /* Services */,
+				A5DDF251266AC4C200436888 /* o7UnitTests.swift */,
+				A5DDF253266AC4C200436888 /* Info.plist */,
+			);
+			path = o7UnitTests;
+			sourceTree = "<group>";
+		};
+		A5DDF259266AC4C800436888 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5DDF25A266AC4D300436888 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A5DDF25B266AC4D900436888 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +169,24 @@
 			productReference = A5DDF236266AC40400436888 /* o7.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A5DDF24E266AC4C200436888 /* o7UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DDF256266AC4C200436888 /* Build configuration list for PBXNativeTarget "o7UnitTests" */;
+			buildPhases = (
+				A5DDF24B266AC4C200436888 /* Sources */,
+				A5DDF24C266AC4C200436888 /* Frameworks */,
+				A5DDF24D266AC4C200436888 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5DDF255266AC4C200436888 /* PBXTargetDependency */,
+			);
+			name = o7UnitTests;
+			productName = o7UnitTests;
+			productReference = A5DDF24F266AC4C200436888 /* o7UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +198,10 @@
 				TargetAttributes = {
 					A5DDF235266AC40400436888 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					A5DDF24E266AC4C200436888 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A5DDF235266AC40400436888;
 					};
 				};
 			};
@@ -117,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				A5DDF235266AC40400436888 /* o7 */,
+				A5DDF24E266AC4C200436888 /* o7UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +231,13 @@
 			files = (
 				A5DDF241266AC41500436888 /* Preview Assets.xcassets in Resources */,
 				A5DDF23E266AC41500436888 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DDF24D266AC4C200436888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +253,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5DDF24B266AC4C200436888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DDF252266AC4C200436888 /* o7UnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5DDF255266AC4C200436888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DDF235266AC40400436888 /* o7 */;
+			targetProxy = A5DDF254266AC4C200436888 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A5DDF243266AC41500436888 /* Debug */ = {
@@ -306,6 +432,46 @@
 			};
 			name = Release;
 		};
+		A5DDF257266AC4C200436888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76BSGUF375;
+				INFOPLIST_FILE = o7UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dandbutton.o7UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/o7.app/o7";
+			};
+			name = Debug;
+		};
+		A5DDF258266AC4C200436888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76BSGUF375;
+				INFOPLIST_FILE = o7UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dandbutton.o7UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/o7.app/o7";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +489,15 @@
 			buildConfigurations = (
 				A5DDF246266AC41500436888 /* Debug */,
 				A5DDF247266AC41500436888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DDF256266AC4C200436888 /* Build configuration list for PBXNativeTarget "o7UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DDF257266AC4C200436888 /* Debug */,
+				A5DDF258266AC4C200436888 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
