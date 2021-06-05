@@ -7,7 +7,8 @@ struct NewsBoard: View {
         NavigationView {
             List(viewModel.newsItems) { newsItem in
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(newsItem.date)
+                    Label(newsItem.date, systemImage: "calendar")
+                        .font(.callout)
                     Text(newsItem.title)
                         .font(.headline)
                         .lineLimit(0)
