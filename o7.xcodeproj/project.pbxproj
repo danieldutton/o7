@@ -17,6 +17,7 @@
 		A5DDF261266AC75800436888 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF260266AC75800436888 /* NewsService.swift */; };
 		A5DDF263266ACA3300436888 /* sample_news.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF262266ACA3300436888 /* sample_news.json */; };
 		A5DDF266266B745500436888 /* NewsBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF264266B731300436888 /* NewsBoardViewModel.swift */; };
+		A5DDF269266B7A6F00436888 /* NewsItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF268266B7A6F00436888 /* NewsItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A5DDF260266AC75800436888 /* NewsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		A5DDF262266ACA3300436888 /* sample_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_news.json; sourceTree = "<group>"; };
 		A5DDF264266B731300436888 /* NewsBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBoardViewModel.swift; sourceTree = "<group>"; };
+		A5DDF268266B7A6F00436888 /* NewsItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		A5DDF250266AC4C200436888 /* o7UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				A5DDF267266B7A6700436888 /* Model */,
 				A5DDF25A266AC4D300436888 /* ViewModel */,
 				A5DDF25B266AC4D900436888 /* Services */,
 				A5DDF251266AC4C200436888 /* o7UnitTests.swift */,
@@ -162,6 +165,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A5DDF267266B7A6700436888 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDF268266B7A6F00436888 /* NewsItemTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DDF252266AC4C200436888 /* o7UnitTests.swift in Sources */,
+				A5DDF269266B7A6F00436888 /* NewsItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
