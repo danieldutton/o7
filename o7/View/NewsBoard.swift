@@ -25,6 +25,12 @@ struct NewsBoard: View {
 
 struct NewsBoard_Previews: PreviewProvider {
     static var previews: some View {
-        NewsBoard()
+        Group {
+            NewsBoard()
+                .colorScheme(.light)
+            NewsBoard()
+                .colorScheme(.dark)
+        }
+        
     }
 }
