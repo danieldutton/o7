@@ -9,6 +9,9 @@ struct NewsBoard: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(newsItem.date)
                     Text(newsItem.title)
+                        .font(.headline)
+                        .lineLimit(0)
+                        .truncationMode(.tail)
                     Text(newsItem.body)
                 }
             }
