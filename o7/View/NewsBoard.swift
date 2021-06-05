@@ -1,11 +1,19 @@
 import SwiftUI
 
 struct NewsBoard: View {
+    @StateObject var viewModel = NewsBoardViewModel()
+    
     var body: some View {
         NavigationView {
-            Text("Hello World")
-                .navigationBarTitle("Galnet News")
-                .navigationBarTitleDisplayMode(.large)
+            List(viewModel.newsItems) { newsItem in
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(newsItem.date)
+                    Text(newsItem.title)
+                    Text(newsItem.body)
+                }
+            }
+            .navigationBarTitle("Galnet News")
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }

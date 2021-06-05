@@ -16,6 +16,7 @@
 		A5DDF25F266AC6E000436888 /* HTMLNewsSanitiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF25E266AC6E000436888 /* HTMLNewsSanitiser.swift */; };
 		A5DDF261266AC75800436888 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF260266AC75800436888 /* NewsService.swift */; };
 		A5DDF263266ACA3300436888 /* sample_news.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF262266ACA3300436888 /* sample_news.json */; };
+		A5DDF266266B745500436888 /* NewsBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF264266B731300436888 /* NewsBoardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A5DDF25E266AC6E000436888 /* HTMLNewsSanitiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNewsSanitiser.swift; sourceTree = "<group>"; };
 		A5DDF260266AC75800436888 /* NewsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		A5DDF262266ACA3300436888 /* sample_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_news.json; sourceTree = "<group>"; };
+		A5DDF264266B731300436888 /* NewsBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBoardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		A5DDF24A266AC49D00436888 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A5DDF264266B731300436888 /* NewsBoardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DDF266266B745500436888 /* NewsBoardViewModel.swift in Sources */,
 				A5DDF261266AC75800436888 /* NewsService.swift in Sources */,
 				A5DDF23C266AC40400436888 /* NewsBoard.swift in Sources */,
 				A5DDF25D266AC63400436888 /* NewsItem.swift in Sources */,
