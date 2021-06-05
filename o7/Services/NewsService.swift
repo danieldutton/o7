@@ -6,7 +6,7 @@ protocol NewsService {
 }
 
 class GalnetNewsWebService: NewsService {
-    private let url = URL(string: "https://elitedangerous-website-backend-production.elitedangerous.com/api/galnet?_format=json")!
+    private let url = URL(string: "https://www.alpha-orbital.com/galnet-feed")!
     
     private let urlSession: URLSession
     

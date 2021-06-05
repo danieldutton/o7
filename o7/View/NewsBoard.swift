@@ -6,17 +6,20 @@ struct NewsBoard: View {
     var body: some View {
         NavigationView {
             List(viewModel.newsItems) { newsItem in
-                LazyVStack(alignment: .leading, spacing: 5) {
-                    Label(newsItem.date, systemImage: "calendar")
-                        .font(.callout)
-                    Text(newsItem.title)
-                        .font(.headline)
-                        .lineLimit(0)
-                        .truncationMode(.tail)
-                    Text(newsItem.body)
-                        .font(.body)
-                        .lineLimit(5)
+                NavigationLink(destination: NewsItemDetail(newsItem: newsItem)) {
+                    LazyVStack(alignment: .leading, spacing: 5) {
+                        Label(newsItem.date, systemImage: "calendar")
+                            .font(.callout)
+                        Text(newsItem.title)
+                            .font(.headline)
+                            .lineLimit(0)
+                            .truncationMode(.tail)
+                        Text(newsItem.body)
+                            .font(.body)
+                            .lineLimit(5)
+                    }
                 }
+                
             }
             .navigationBarTitle("Galnet News")
             .navigationBarTitleDisplayMode(.large)

@@ -17,6 +17,7 @@ class NewsBoardViewModel: ObservableObject {
     }
     
     func loadNewsBoard() {
+        
         Just(Bundle.main.url(forResource: "sample_news", withExtension: "json")!)
             .tryMap { try Data(contentsOf: $0)}
             .decode(type: [NewsItem].self, decoder: JSONDecoder())
@@ -24,5 +25,12 @@ class NewsBoardViewModel: ObservableObject {
             .map { self.newsSanitiser.sanitise($0)}
             .assign(to: \.newsItems, on: self)
             .store(in: &subscriptions)
+         
+        
+        /*
+        newsService.fetchNewsItems()
+            .assign(to: \.newsItems, on: self)
+            .store(in: &subscriptions)
+ */
     }
 }
