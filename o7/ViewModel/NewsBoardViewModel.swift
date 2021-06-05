@@ -4,10 +4,15 @@ import SwiftUI
 
 class NewsBoardViewModel: ObservableObject {
     private var subscriptions = Set<AnyCancellable>()
-    
+    private var newsService: NewsService
+    private var newsSanitiser: NewsSanitiser
     @Published var newsItems: [NewsItem] = []
     
-    init() {
+    init(newsService: NewsService = GalnetNewsWebService(),
+         newsSanitiser: NewsSanitiser = HTMLNewsSanitiser()) {
+        self.newsService = newsService
+        self.newsSanitiser = newsSanitiser
+        
         loadNewsBoard()
     }
     
@@ -16,7 +21,7 @@ class NewsBoardViewModel: ObservableObject {
             .tryMap { try Data(contentsOf: $0)}
             .decode(type: [NewsItem].self, decoder: JSONDecoder())
             .replaceError(with: [NewsItem(date: "", title: "Preview Error", body: "")])
-            .map { HTMLNewsSanitiser().sanitise($0)}
+            .map { self.newsSanitiser.sanitise($0)}
             .assign(to: \.newsItems, on: self)
             .store(in: &subscriptions)
     }
