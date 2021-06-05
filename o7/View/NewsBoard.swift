@@ -14,6 +14,7 @@ struct NewsBoard: View {
                         .truncationMode(.tail)
                     Text(newsItem.body)
                         .font(.body)
+                        .lineLimit(5)
                 }
             }
             .navigationBarTitle("Galnet News")
