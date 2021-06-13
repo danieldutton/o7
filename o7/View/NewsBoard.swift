@@ -10,8 +10,11 @@ struct NewsBoard: View {
                 List(viewModel.newsItems) { newsItem in
                     NavigationLink(destination: NewsItemDetail(newsItem: newsItem)) {
                         LazyVStack(alignment: .leading, spacing: 5) {
-                            Label(newsItem.date, systemImage: "calendar")
-                                .font(.callout)
+                            HStack(spacing: 5) {
+                                Image(systemName: "calendar")
+                                Text(newsItem.date)
+                                    .font(.callout)
+                            }
                             Text(newsItem.title)
                                 .font(.headline)
                                 .lineLimit(0)
