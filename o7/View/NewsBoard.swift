@@ -1,5 +1,53 @@
 import SwiftUI
 
+struct NewsDate: View {
+    let newsItem: NewsItem
+    
+    var body: some View {
+        HStack(spacing: 5) {
+            Image(systemName: "calendar")
+                .foregroundColor(.orange)
+            Text(newsItem.date)
+                .font(.callout)
+                .foregroundColor(.gray)
+                
+        }
+    }
+}
+
+struct NewsTitle: View {
+    let newsItem: NewsItem
+    
+    var body: some View {
+        Text(newsItem.title)
+            .font(.headline)
+            .foregroundColor(.gray)
+            .lineLimit(0)
+            .truncationMode(.tail)
+    }
+}
+
+struct NewsBody: View {
+    let newsItem: NewsItem
+    
+    var body: some View {
+        Text(newsItem.body)
+            .font(.body)
+            .lineLimit(5)
+    }
+}
+
+struct NavBarImage: View {
+    let systemIcon: String
+    var body: some View {
+        Image(systemName: systemIcon)
+            .foregroundColor(.orange)
+            .imageScale(.large)
+            .frame(width: 44, height: 44, alignment: .trailing)
+            .padding()
+    }
+}
+
 struct NewsBoard: View {
     @StateObject var viewModel = NewsBoardViewModel()
     @State private var displayInfoAlert: Bool = false
@@ -10,18 +58,9 @@ struct NewsBoard: View {
                 List(viewModel.newsItems) { newsItem in
                     NavigationLink(destination: NewsItemDetail(newsItem: newsItem)) {
                         LazyVStack(alignment: .leading, spacing: 5) {
-                            HStack(spacing: 5) {
-                                Image(systemName: "calendar")
-                                Text(newsItem.date)
-                                    .font(.callout)
-                            }
-                            Text(newsItem.title)
-                                .font(.headline)
-                                .lineLimit(0)
-                                .truncationMode(.tail)
-                            Text(newsItem.body)
-                                .font(.body)
-                                .lineLimit(5)
+                            NewsDate(newsItem: newsItem)
+                            NewsTitle(newsItem: newsItem)
+                            NewsBody(newsItem: newsItem)
                         }
                     }
                 }
@@ -31,11 +70,11 @@ struct NewsBoard: View {
                 .navigationBarItems(leading: Button(action: {
                     displayInfoAlert.toggle()
                 }, label: {
-                    Image(systemName: "info.circle")
+                    NavBarImage(systemIcon: "info.circle")
                 }), trailing: Button(action: {
                     //refresh list
                 }, label: {
-                    Image(systemName: "arrow.clockwise")
+                    NavBarImage(systemIcon: "arrow.clockwise")
                 }))
                 
                 ProgressView()
