@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5C4AECD26765F7C0036557E /* NewsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4AECC26765F7C0036557E /* NewsDate.swift */; };
+		A5C4AECF26765FB80036557E /* NewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4AECE26765FB80036557E /* NewsTitle.swift */; };
+		A5C4AED126765FFC0036557E /* NewsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4AED026765FFC0036557E /* NewsBody.swift */; };
+		A5C4AED32676603F0036557E /* NavBarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4AED22676603F0036557E /* NavBarImage.swift */; };
+		A5C4AED5267660970036557E /* PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4AED4267660970036557E /* PreviewContent.swift */; };
 		A5DDF23A266AC40400436888 /* o7App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF239266AC40400436888 /* o7App.swift */; };
 		A5DDF23C266AC40400436888 /* NewsBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF23B266AC40400436888 /* NewsBoard.swift */; };
 		A5DDF23E266AC41500436888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF23D266AC41500436888 /* Assets.xcassets */; };
@@ -32,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5C4AECC26765F7C0036557E /* NewsDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDate.swift; sourceTree = "<group>"; };
+		A5C4AECE26765FB80036557E /* NewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTitle.swift; sourceTree = "<group>"; };
+		A5C4AED026765FFC0036557E /* NewsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBody.swift; sourceTree = "<group>"; };
+		A5C4AED22676603F0036557E /* NavBarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarImage.swift; sourceTree = "<group>"; };
+		A5C4AED4267660970036557E /* PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContent.swift; sourceTree = "<group>"; };
 		A5DDF236266AC40400436888 /* o7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = o7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DDF239266AC40400436888 /* o7App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = o7App.swift; sourceTree = "<group>"; };
 		A5DDF23B266AC40400436888 /* NewsBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBoard.swift; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 			children = (
 				A5DDF262266ACA3300436888 /* sample_news.json */,
 				A5DDF240266AC41500436888 /* Preview Assets.xcassets */,
+				A5C4AED4267660970036557E /* PreviewContent.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -122,6 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				A5DDF23B266AC40400436888 /* NewsBoard.swift */,
+				A5C4AED22676603F0036557E /* NavBarImage.swift */,
+				A5C4AECC26765F7C0036557E /* NewsDate.swift */,
+				A5C4AECE26765FB80036557E /* NewsTitle.swift */,
+				A5C4AED026765FFC0036557E /* NewsBody.swift */,
 				A5DDF26A266B86E900436888 /* NewsItemDetail.swift */,
 			);
 			path = View;
@@ -282,7 +297,12 @@
 				A5DDF266266B745500436888 /* NewsBoardViewModel.swift in Sources */,
 				A5DDF261266AC75800436888 /* NewsService.swift in Sources */,
 				A5DDF23C266AC40400436888 /* NewsBoard.swift in Sources */,
+				A5C4AED126765FFC0036557E /* NewsBody.swift in Sources */,
+				A5C4AECD26765F7C0036557E /* NewsDate.swift in Sources */,
 				A5DDF25D266AC63400436888 /* NewsItem.swift in Sources */,
+				A5C4AED32676603F0036557E /* NavBarImage.swift in Sources */,
+				A5C4AED5267660970036557E /* PreviewContent.swift in Sources */,
+				A5C4AECF26765FB80036557E /* NewsTitle.swift in Sources */,
 				A5DDF25F266AC6E000436888 /* HTMLNewsSanitiser.swift in Sources */,
 				A5DDF23A266AC40400436888 /* o7App.swift in Sources */,
 			);

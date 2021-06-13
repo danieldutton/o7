@@ -1,53 +1,5 @@
 import SwiftUI
 
-struct NewsDate: View {
-    let newsItem: NewsItem
-    
-    var body: some View {
-        HStack(spacing: 5) {
-            Image(systemName: "calendar")
-                .foregroundColor(.orange)
-            Text(newsItem.date)
-                .font(.callout)
-                .foregroundColor(.gray)
-                
-        }
-    }
-}
-
-struct NewsTitle: View {
-    let newsItem: NewsItem
-    
-    var body: some View {
-        Text(newsItem.title)
-            .font(.headline)
-            .foregroundColor(.gray)
-            .lineLimit(0)
-            .truncationMode(.tail)
-    }
-}
-
-struct NewsBody: View {
-    let newsItem: NewsItem
-    
-    var body: some View {
-        Text(newsItem.body)
-            .font(.body)
-            .lineLimit(5)
-    }
-}
-
-struct NavBarImage: View {
-    let systemIcon: String
-    var body: some View {
-        Image(systemName: systemIcon)
-            .foregroundColor(.orange)
-            .imageScale(.large)
-            .frame(width: 44, height: 44, alignment: .trailing)
-            .padding()
-    }
-}
-
 struct NewsBoard: View {
     @StateObject var viewModel = NewsBoardViewModel()
     @State private var displayInfoAlert: Bool = false

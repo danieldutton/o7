@@ -6,9 +6,9 @@ struct NewsItemDetail: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text(newsItem.date)
-                Text(newsItem.title)
-                Text(newsItem.body)
+                NewsDate(newsItem: newsItem)
+                NewsTitle(newsItem: newsItem)
+                NewsBody(newsItem: newsItem)
             }
                 .padding()
             }
@@ -18,7 +18,6 @@ struct NewsItemDetail: View {
 
 struct NewsItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        let newsItem = NewsItem(date: "Jan 24 2024", title: "Title", body: "Body")
-        return NewsItemDetail(newsItem: newsItem)
+        return NewsItemDetail(newsItem: preview_newsItem)
     }
 }
