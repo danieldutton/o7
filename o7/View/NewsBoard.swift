@@ -27,7 +27,11 @@ struct NewsBoard: View {
                 //launch modal/alert
             }, label: {
                 Image(systemName: "info.circle")
-            }))
+            }), trailing: Button(action: {
+                //refresh list
+            }, label: {
+                Image(systemName: "arrow.clockwise")
+            } ))
         }
     }
 }
