@@ -19,10 +19,15 @@ struct NewsBoard: View {
                             .lineLimit(5)
                     }
                 }
-                
             }
+            .listStyle(PlainListStyle())
             .navigationBarTitle("Galnet News")
             .navigationBarTitleDisplayMode(.large)
+            .navigationBarItems(leading: Button(action: {
+                //launch modal/alert
+            }, label: {
+                Image(systemName: "info.circle")
+            }))
         }
     }
 }
@@ -35,6 +40,5 @@ struct NewsBoard_Previews: PreviewProvider {
             NewsBoard()
                 .colorScheme(.dark)
         }
-        
     }
 }
