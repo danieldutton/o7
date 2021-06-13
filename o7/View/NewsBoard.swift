@@ -2,6 +2,7 @@ import SwiftUI
 
 struct NewsBoard: View {
     @StateObject var viewModel = NewsBoardViewModel()
+    @State private var displayInfoAlert: Bool = false
     
     var body: some View {
         NavigationView {
@@ -24,7 +25,7 @@ struct NewsBoard: View {
             .navigationBarTitle("Galnet News")
             .navigationBarTitleDisplayMode(.large)
             .navigationBarItems(leading: Button(action: {
-                //launch modal/alert
+                displayInfoAlert.toggle()
             }, label: {
                 Image(systemName: "info.circle")
             }), trailing: Button(action: {
@@ -33,6 +34,12 @@ struct NewsBoard: View {
                 Image(systemName: "arrow.clockwise")
             } ))
         }
+        .alert(isPresented: $displayInfoAlert, content: {
+            Alert(
+                title: Text("Acknowledgements"),
+                message: Text("Elite Dangerous, c 1984 - 2019 Frontier Developments Plc.  All rights reserved."),
+                dismissButton: .cancel(Text("OK")))
+        })
     }
 }
 
