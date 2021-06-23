@@ -42,7 +42,7 @@ struct NewsBoard: View {
     private func copyrightAlert() -> Alert {
         Alert(
             title: Text("Acknowledgements"),
-            message: Text("Elite Dangerous, c 1984 - 2019 Frontier Developments Plc.  All rights reserved."),
+            message: Text("Elite Dangerous, \u{00A9}1984-2021 Frontier Developments Plc.  All rights reserved."),
             dismissButton: .cancel(Text("OK")))
     }
 }
