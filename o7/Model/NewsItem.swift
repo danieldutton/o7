@@ -5,4 +5,8 @@ struct NewsItem: Identifiable, Codable, Equatable {
     var title: String
     var date: String
     var content: String
+    
+    enum CodingKeys: String, CodingKey {
+        case title, date, content
+    }
 }

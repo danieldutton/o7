@@ -18,6 +18,7 @@ class NewsBoardViewModel: ObservableObject {
     }
     
     func loadNewsBoard() {
+        /*
         Just(Bundle.main.url(forResource: "sample_news", withExtension: "json")!)
             .handleEvents(receiveRequest: { _ in self.isPerformingWork = true })
             .tryMap { try Data(contentsOf: $0)}
@@ -27,12 +28,14 @@ class NewsBoardViewModel: ObservableObject {
             .handleEvents(receiveRequest: { _ in self.isPerformingWork = false })
             .assign(to: \.newsItems, on: self)
             .store(in: &subscriptions)
-         
-        
-        /*
+         */
         newsService.fetchNewsItems()
+            .receive(on: DispatchQueue.main)
+            .handleEvents(receiveRequest: { _ in self.isPerformingWork = true })
+            .map { self.newsSanitiser.sanitise($0)}
+            .handleEvents(receiveRequest: { _ in self.isPerformingWork = false })
             .assign(to: \.newsItems, on: self)
             .store(in: &subscriptions)
- */
+            
     }
 }
