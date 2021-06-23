@@ -24,7 +24,7 @@ struct NewsBoard: View {
                 }, label: {
                     NavBarImage(systemIcon: "info.circle")
                 }), trailing: Button(action: {
-                    //refresh list
+                    viewModel.loadNewsBoard()
                 }, label: {
                     NavBarImage(systemIcon: "arrow.clockwise")
                 }))

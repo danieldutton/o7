@@ -78,6 +78,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A529A43D2683D99800BAA2BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A529A43E2683D9D300BAA2BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
 		A5DDF22D266AC40400436888 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				A5DDF267266B7A6700436888 /* Model */,
+				A529A43D2683D99800BAA2BE /* ViewModel */,
+				A529A43E2683D9D300BAA2BE /* Services */,
 				A5DDF251266AC4C200436888 /* o7UnitTests.swift */,
 				A5DDF253266AC4C200436888 /* Info.plist */,
 			);
