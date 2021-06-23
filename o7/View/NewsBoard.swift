@@ -31,7 +31,7 @@ struct NewsBoard: View {
                 
                 ProgressView()
                     .scaleEffect(1.4)
-                    .opacity(viewModel.isPerformingWork ? 0: 1)
+                    .opacity(viewModel.isPerformingWork ? 1: 0)
             }
         }
         .alert(isPresented: $displayInfoAlert, content: {
