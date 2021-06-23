@@ -22,7 +22,7 @@ class GalnetNewsWebService: NewsService {
             .map(\.data)
             .decode(type: [NewsItem].self, decoder: JSONDecoder())
             .handleEvents(receiveSubscription: {print($0)}, receiveOutput: {print($0)}, receiveCompletion: {print($0)})
-            .replaceError(with: [NewsItem(date: "date", title: "title", body: "body")])
+            .replaceError(with: [NewsItem(title: "title", date: "date", content: "content")])
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

@@ -154,8 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				A5DDF267266B7A6700436888 /* Model */,
-				A5DDF25A266AC4D300436888 /* ViewModel */,
-				A5DDF25B266AC4D900436888 /* Services */,
 				A5DDF251266AC4C200436888 /* o7UnitTests.swift */,
 				A5DDF253266AC4C200436888 /* Info.plist */,
 			);
@@ -167,20 +165,6 @@
 			children = (
 				A5DDF25E266AC6E000436888 /* HTMLNewsSanitiser.swift */,
 				A5DDF260266AC75800436888 /* NewsService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		A5DDF25A266AC4D300436888 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A5DDF25B266AC4D900436888 /* Services */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Services;
 			sourceTree = "<group>";

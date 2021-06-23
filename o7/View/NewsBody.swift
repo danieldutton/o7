@@ -4,7 +4,7 @@ struct NewsBody: View {
     let newsItem: NewsItem
     
     var body: some View {
-        Text(newsItem.body)
+        Text(newsItem.content)
             .font(.body)
             .lineLimit(5)
     }

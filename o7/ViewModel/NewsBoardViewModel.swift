@@ -22,7 +22,7 @@ class NewsBoardViewModel: ObservableObject {
             .handleEvents(receiveRequest: { _ in self.isPerformingWork = true })
             .tryMap { try Data(contentsOf: $0)}
             .decode(type: [NewsItem].self, decoder: JSONDecoder())
-            .replaceError(with: [NewsItem(date: "", title: "Preview Error", body: "")])
+            .replaceError(with: [NewsItem(title: "Preview Error", date: "", content: "content")])
             .map { self.newsSanitiser.sanitise($0)}
             .handleEvents(receiveRequest: { _ in self.isPerformingWork = false })
             .assign(to: \.newsItems, on: self)
