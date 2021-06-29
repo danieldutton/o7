@@ -49,13 +49,6 @@ struct NewsBoard: View {
 
 struct NewsBoard_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            NewsBoard()
-                .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
-                .colorScheme(.light)
-            NewsBoard()
-                .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
-                .colorScheme(.dark)
-        }
+        NewsBoard()
     }
 }

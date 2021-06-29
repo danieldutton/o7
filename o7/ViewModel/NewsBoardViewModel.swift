@@ -21,12 +21,15 @@ class NewsBoardViewModel: ObservableObject {
     }
     
     func loadNewsBoard() {
+        
         newsService.fetchNewsItems()
             .receive(on: DispatchQueue.main)
             .handleEvents(receiveRequest: { _ in self.isPerformingWork = true })
+            .map { $0.newsItems}
             .map { self.newsSanitiser.sanitise($0)}
             .handleEvents(receiveOutput: { _ in self.isPerformingWork = false })
             .assign(to: \.newsItems, on: self)
             .store(in: &subscriptions)
+        
     }
 }
